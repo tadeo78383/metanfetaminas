@@ -1,0 +1,171 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Nuevo Diseño</title>
+    <style>
+        
+        /* 1. Definición de la Animación (Keyframes) */
+        @keyframes rebote {
+            0% { transform: translateY(0); } 
+            50% { transform: translateY(-20px); } 
+            100% { transform: translateY(0); }
+        }
+
+        /* 2. Aplicación de la Animación a la Imagen */
+        #imagen-animada {
+            width: 250px; /* Reducido un poco para el diseño */
+            height: auto;
+            margin-bottom: 20px; /* Espacio debajo de la imagen */
+            
+            /* Aplicamos la animación */
+            animation-name: rebote;         
+            animation-duration: 2s;         
+            animation-timing-function: ease-in-out; 
+            animation-iteration-count: infinite; 
+        }
+
+        /* --- ESTILOS GENERALES Y DE FONDO --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eee; 
+            background-image: none; 
+        }
+
+        /* Contenedor principal que mantiene el ancho y centra */
+        .main-content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            min-height: 100vh;
+        }
+
+        /* --- ENCABEZADO SUPERIOR (AZUL OSCURO) --- */
+        .header-bg {
+            background-color: #004080; /* Azul Oscuro */
+            color: white;
+            text-align: center;
+            border-bottom: 3px solid #002D5A; /* Borde inferior más oscuro */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .header-bg p {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+        
+        /* --- DISEÑO DE COLUMNAS (VERDE Y AMARILLO) --- */
+        .layout-grid {
+            display: flex;
+            height: calc(100vh - 75px); 
+            overflow: hidden; 
+        }
+
+        /* Columna de Índice (Izquierda - VERDE VIBRANTE) */
+        .sidebar-index {
+            width: 200px; 
+            padding: 15px;
+            background-color: #66CC66; 
+            border-right: 1px solid #33AA33;
+            flex-shrink: 0; 
+            color: #000000; 
+        }
+
+        /* Título del índice */
+        .sidebar-index h2 {
+            color: #004080; 
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #33AA33;
+        }
+
+        /* Lista de enlaces del índice */
+        .sidebar-index ol {
+            padding-left: 0;
+            list-style: none; 
+            margin: 0;
+        }
+
+        .sidebar-index li {
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        /* Estilo de los enlaces en el índice */
+        .sidebar-index a {
+            text-decoration: none;
+            color: #004080; 
+            font-size: 0.9em;
+        }
+        
+        .sidebar-index a:hover {
+             text-decoration: underline;
+             color: #0056b3;
+        }
+
+        /* Columna de Contenido (Derecha - AMARILLO PÁLIDO) */
+        .content-area {
+            flex-grow: 1; 
+            padding: 20px;
+            background-color: #FFFFCC; 
+            
+            /* Ajuste para que el contenido se centre y se apile bien */
+            display: flex;
+            flex-direction: column; /* Apila la imagen y el texto verticalmente */
+            justify-content: center; /* Centrar verticalmente */
+            align-items: center; /* Centrar horizontalmente */
+            text-align: center;
+        }
+
+        .content-area p {
+            color: #000000; 
+            font-size: 1.5em; /* Reducido para dejar espacio a la imagen */
+            font-weight: bold;
+            max-width: 80%; /* Asegura que el texto no se extienda demasiado */
+        }
+    </style>
+</head>
+<body>
+    <div class="fondo.jpeg">
+        
+        <div class="header-bg">
+		<marquee>
+            <p>Metanfetamina</p>
+			</marquee>
+            <p></p>
+        </div>
+
+        <div class="layout-grid">
+            <div class="sidebar-index">
+                <h2>Índice</h2>
+                <ol>
+                    <li><a href="que es.html">¿Que es?</a></p></li>
+                     <li><a href="efectos.html">Efectos</a></p></li>
+					  <li><a href="testimonios.html">Testimonios</a></p></li>
+                    <li><a href="informacion adicional.html">Informacion adicional</a></p></li>
+					 <li><a href="formulario.html">Formulario</a></p></li>
+				
+                </ol>
+            </div>
+            <div class="content-area">
+                
+                <img id="imagen-animada" src="fondo.jpeg" alt="Estructura molecular de Metanfetamina">
+                
+                <p>La metanfetamina es una sustancia que ha capturado la atención mundial debido a sus potentes efectos estimulantes y su alarmante potencial adictivo. Más allá de ser una simple droga ilícita, su consumo representa un grave problema de salud pública con profundas consecuencias sociales, económicas y sanitarias.</p>
+            </div>
+        </div>
+    </div>
+	
+</body>
+</body>
+</html>

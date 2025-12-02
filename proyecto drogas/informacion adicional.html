@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> 
+<title>Informacion adicional</title>
+<style>
+
+body {
+    background-color: #e0f7fa;
+    color: #003366;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer{
+    background-color : #00796b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+section{
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+ 
+
+
+/* --- ESTILOS DEL BOTÓN "REGRESAR" (Centrado al final) --- */
+.centrador {
+    text-align: center; /* Centra el botón al final */
+    padding-top: 40px; /* Más espacio para separar */
+    padding-bottom: 20px;
+}
+
+.boton-introduccion { /* Estilo usado por el botón "Regresar" */
+    background-color: #e0f7fa;
+    border: 3px solid #FFFF00; /* Borde amarillo para "Regresar" */
+    border-radius: 10px;
+    display: inline-block; 
+    padding: 10px 30px;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.3);
+    color: #003366;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.boton-introduccion:hover {
+    background-color: #c0e0e4;
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.5);
+    color: #001a33;
+}
+/* ----------------------------------------- */
+
+
+/* --- NUEVOS ESTILOS PARA LOS BOTONES EN LISTA (Infografía/Cómic) --- */
+.lista-botones {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.lista-botones li {
+    margin-bottom: 15px; /* Espacio vertical entre los botones */
+}
+
+.boton-lista {
+    background-color: #e0f7fa;
+    border: 3px solid #003366; /* Borde del color principal (Azul Oscuro) */
+    border-radius: 10px;
+    display: inline-block; /* Se ajusta al contenido */
+    padding: 10px 30px;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
+    
+    color: #003366;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.boton-lista:hover {
+    background-color: #c0e0e4;
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.8);
+}
+/* ----------------------------------------- */
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Informacion adicional</h1>
+</header>
+
+<section>
+    <h3>Descarga nuestro informe completo aquí:</h3>
+    
+    <ul class="lista-botones">
+        <li>
+            <a href="meta.pdf" target="_blank" class="boton-lista">Infografía</a>
+        </li>
+        <li>
+            <a href="meta2.pdf" target="_blank" class="boton-lista">Cómic</a>
+        </li>
+    </ul>
+
+    <div class="centrador">
+        <a href="indice.html" class="boton-introduccion">
+            Regresar 
+        </a>
+    </div>
+</section>
+</body>
+</html>
+
+
+
+
+
